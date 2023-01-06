@@ -10,7 +10,7 @@
 }
 
 .feature__elements {
-  @extend %flex-items;
+  @extend %flex-align;
   min-width: 270px;
   min-height: 120px;
   justify-content: center;

@@ -2,7 +2,7 @@ header {
   border: 1px solid #ececec;
   background-color: var(--main-white-color);
   & .container {
-    @extend %flex-items;
+    @extend %flex-align;
   }
 }
 
@@ -65,7 +65,7 @@ header {
 }
 
 .contacts__link {
-  @extend %flex-items;
+  @extend %flex-align;
   @extend %width-height;
   @include font(null, 14px, 1.14, 0.02em);
   color: var(--main-link-color);

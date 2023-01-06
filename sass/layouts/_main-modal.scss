@@ -24,7 +24,7 @@
 }
 
 .modal__close {
-  @extend %flex-items;
+  @extend %flex-align;
   position: absolute;
   right: 8px;
   top: 8px;
@@ -127,7 +127,7 @@
 }
 
 .modal-group__modal-politic-label {
-  @extend %flex-items;
+  @extend %flex-align;
   @include font(400, 14px, 1.71, 0.03em);
   justify-content: center;
   color: var(--main-p-color);

@@ -36,7 +36,7 @@
 }
 
 .clients__link {
-  @extend %flex-items;
+  @extend %flex-align;
   @extend %width-height;
   justify-content: center;
   &:hover .clients__items {

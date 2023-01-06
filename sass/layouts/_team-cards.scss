@@ -36,12 +36,12 @@
 }
 
 .social {
-  @extend %flex-items;
+  @extend %flex-align;
   justify-content: center;
   margin-top: 16px;
 }
 .social__link {
-  @extend %flex-items;
+  @extend %flex-align;
   @extend %width-height;
   border-radius: 50%;
   background-color: var(--main-white-color);
