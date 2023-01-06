@@ -15,7 +15,8 @@ button {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 p,
 h1,
@@ -32,8 +33,12 @@ ul {
   padding-left: 0px;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .nopadding {
   padding-top: 0px;
