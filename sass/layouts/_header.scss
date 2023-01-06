@@ -1,0 +1,83 @@
+header {
+  border: 1px solid #ececec;
+  background-color: var(--main-white-color);
+  & .container {
+    @extend %flex-items;
+  }
+}
+
+.logo {
+  @include font(700, 26px, 1.19, 0.03em);
+  text-decoration: none;
+  padding: 24px 0 25px 0;
+}
+.header__logo {
+  margin-right: 93px;
+}
+.logo--dark-color {
+  color: var(--main-logo-color);
+}
+.logo--light-color {
+  color: var(--main-white-color);
+}
+.logo__accent {
+  color: var(--accent-color);
+}
+.navigation__list {
+  display: flex;
+  & > li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  font-weight: 500;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.navigation__link {
+  position: relative;
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--second-link-color);
+  padding-bottom: 32px;
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+  }
+  &.current::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.contacts__link {
+  @extend %flex-items;
+  @extend %width-height;
+  @include font(null, 14px, 1.14, 0.02em);
+  color: var(--main-link-color);
+  justify-content: center;
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__icons {
+  fill: currentColor;
+  margin-right: 10px;
+}

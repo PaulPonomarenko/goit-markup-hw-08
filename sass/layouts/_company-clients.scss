@@ -1,0 +1,48 @@
+.company {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.company__title {
+  @include font(null, 36px, 1.16, 00.03em);
+  color: var(--main-h-color);
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+.company__clients {
+  margin-top: 50px;
+}
+
+.clients__icons {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--main-icons-color);
+  border-radius: 4px;
+  transition: border 250ms var(--timing-function);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+.clients__items {
+  fill: var(--main-icons-color);
+  transition: fill 250ms var(--timing-function);
+}
+
+.clients__link {
+  @extend %flex-items;
+  @extend %width-height;
+  justify-content: center;
+  &:hover .clients__items {
+    fill: var(--accent-color);
+  }
+  &:focus .clients__items {
+    fill: var(--accent-color);
+  }
+}

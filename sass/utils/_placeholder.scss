@@ -1,0 +1,14 @@
+%flex-align {
+  display: flex;
+  align-items: center;
+}
+%width-height {
+  width: 100%;
+  height: 100%;
+}
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
