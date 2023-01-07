@@ -1,7 +1,14 @@
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .about__title {
@@ -38,11 +45,28 @@
   position: relative;
 }
 .projects__items {
-  flex-basis: calc((100% - 60px) / 3);
   border: 1px solid var(--main-border-color);
   transition: box-shadow 250ms var(--timing-function);
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
   & :nth-child(3n) {
-    margin-right: 0;
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
   }
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
