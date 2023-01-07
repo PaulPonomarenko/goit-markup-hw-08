@@ -2,30 +2,43 @@
   background-color: var(--main-bg-color);
 }
 .main-footer {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: wrap;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  text-align: center;
+  // align-items: baseline;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 768px) {
     justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: flex-start;
   }
 }
 
 .main-footer__address-container {
-  // margin-right: 70px;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-
-  margin-top: 60px;
-  margin-bottom: 60px;
+  // margin-left: auto;
+  // margin-right: auto;
   text-align: center;
+  margin-bottom: 60px;
 
-  // @media screen and (min-width: 768px) {
-  //   margin-left: 61px;
-  //   margin-right: 165px;
-  // }
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+    padding-left: 61px;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: column;
+    margin-right: 70px;
+    text-align: start;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
 }
 
 .address {
@@ -51,11 +64,19 @@
   }
 }
 .footer-icons {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
   text-align: center;
+  // margin-left: auto;
+  // margin-right: auto;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-right: 89px;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    padding-right: 0;
+    margin-left: 0;
+  }
 }
 
 .footer-icon__title {
@@ -78,10 +99,17 @@
 }
 
 .container-footer-form {
-  text-align: center;
-  margin-bottom: 60px;
-  // width: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.footer-thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }

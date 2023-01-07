@@ -59,40 +59,40 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
+}
 
-  .our-team {
-    padding-top: 30px;
-    padding-bottom: 24px;
+.our-team {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.social {
+  @extend %flex-align;
+  justify-content: center;
+  margin-top: 16px;
+}
+.social__link {
+  @extend %flex-align;
+  @extend %width-height;
+  border-radius: 50%;
+  background-color: var(--main-white-color);
+  justify-content: center;
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
   }
 
-  .social {
-    @extend %flex-align;
-    justify-content: center;
-    margin-top: 16px;
+  &:hover .social__icons {
+    fill: var(--main-white-color);
   }
-  .social__link {
-    @extend %flex-align;
-    @extend %width-height;
-    border-radius: 50%;
-    background-color: var(--main-white-color);
-    justify-content: center;
-    transition: background-color 250ms var(--timing-function);
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-    }
-
-    &:hover .social__icons {
-      fill: var(--main-white-color);
-    }
-    &:focus .social__icons {
-      fill: var(--main-white-color);
-    }
+  &:focus .social__icons {
+    fill: var(--main-white-color);
   }
-  .social__icons {
-    fill: var(--main-icons-color);
-    transition: fill 250ms var(--timing-function);
-  }
+}
+.social__icons {
+  fill: var(--main-icons-color);
+  transition: fill 250ms var(--timing-function);
 }
 
 .social__media {
