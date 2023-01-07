@@ -23,12 +23,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.modal-group__modal-politic-label, .modal__close, .clients__link, .social__link, .social, .feature__elements, .contacts__link, header .container {
+.modal-group__modal-politic-label, .modal__close, .clients__link, .staff__items .social__link, .staff__items .social, .feature__elements, .contacts__link, header .container {
   display: flex;
   align-items: center;
 }
 
-.backdrop, .section-cards__text, .clients__link, .social__link, .contacts__link {
+.backdrop, .section-cards__text, .clients__link, .staff__items .social__link, .contacts__link {
   width: 100%;
   height: 100%;
 }
@@ -414,15 +414,16 @@ header {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 
-.staff {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: -30px;
-  margin-bottom: -30px;
+@media screen and (min-width: 768px) {
+  .staff {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .staff {
@@ -453,42 +454,44 @@ header {
   background-color: var(--main-white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-left: 30px;
+}
+.staff__items:not(:last-child) {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  .staff__items {
-    width: calc((100% - 60px) / 2);
+  .staff__items:not(:last-child) {
+    margin-bottom: 0;
   }
 }
-
-.our-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .staff__items {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
-
-.social {
+.staff__items .our-team {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+.staff__items .social {
   justify-content: center;
   margin-top: 16px;
 }
-
-.social__link {
+.staff__items .social__link {
   border-radius: 50%;
   background-color: var(--main-white-color);
   justify-content: center;
   transition: background-color 250ms var(--timing-function);
 }
-.social__link:hover, .social__link:focus {
+.staff__items .social__link:hover, .staff__items .social__link:focus {
   background-color: var(--accent-color);
 }
-.social__link:hover .social__icons {
+.staff__items .social__link:hover .social__icons {
   fill: var(--main-white-color);
 }
-.social__link:focus .social__icons {
+.staff__items .social__link:focus .social__icons {
   fill: var(--main-white-color);
 }
-
-.social__icons {
+.staff__items .social__icons {
   fill: var(--main-icons-color);
   transition: fill 250ms var(--timing-function);
 }
