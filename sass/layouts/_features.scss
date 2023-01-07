@@ -43,7 +43,11 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--main-h-color);
-  text-align: center;
+  text-align: start;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .feature__text {
   @include font(null, 14px, 1.71, 0.03em);

@@ -277,10 +277,10 @@ header {
 
 .box__example {
   margin-top: 50px;
+  margin-bottom: 94px;
 }
 
-.box__title,
-.section-team__title {
+.box__title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -359,7 +359,12 @@ header {
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--main-h-color);
-  text-align: center;
+  text-align: start;
+}
+@media screen and (max-width: 767px) {
+  .feature__title {
+    text-align: center;
+  }
 }
 
 .feature__text {
@@ -370,17 +375,44 @@ header {
 
 .section-team {
   background-color: var(--white-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-bottom: 94px;
+  }
+}
+
+.section-team__title {
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-align: center;
+  color: var(--main-h-color);
+  margin-bottom: 30px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-team__title {
+    padding-top: 94px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .staff {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
-
-.section-team__staff {
-  margin-top: 50px;
+@media screen and (min-width: 1200px) {
+  .staff {
+    flex-wrap: nowrap;
+  }
 }
 
 .our-team__name {
@@ -406,6 +438,13 @@ header {
   background-color: var(--main-white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .staff__items {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .our-team {

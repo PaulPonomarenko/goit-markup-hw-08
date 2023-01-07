@@ -11,10 +11,10 @@
 }
 .box__example {
   margin-top: 50px;
+  margin-bottom: 94px;
 }
 
-.box__title,
-.section-team__title {
+.box__title {
   @include font(null, 36px, 1.16, 0.03em);
   text-align: center;
   color: var(--main-h-color);
