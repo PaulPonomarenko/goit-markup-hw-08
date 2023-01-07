@@ -375,10 +375,12 @@ header {
 
 .section-team {
   background-color: var(--white-bg-color);
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section-team {
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -388,14 +390,11 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  text-align: center;
   color: var(--main-h-color);
   margin-bottom: 30px;
-  padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section-team__title {
-    padding-top: 94px;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -492,15 +491,31 @@ header {
 }
 
 .company__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-h-color);
+}
+@media screen and (min-width: 1200px) {
+  .company__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    flex-wrap: nowrap;
+  }
 }
 
 .company__clients {
@@ -508,14 +523,27 @@ header {
 }
 
 .clients__icons {
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 30px;
   width: 170px;
   height: 92px;
   border: 1px solid var(--main-icons-color);
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
 }
-.clients__icons:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .clients__icons {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__icons {
+    width: calc((100% - 90px) / 3);
+  }
+  .clients__icons:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .clients__icons:hover, .clients__icons:focus {
   border: 1px solid var(--accent-color);

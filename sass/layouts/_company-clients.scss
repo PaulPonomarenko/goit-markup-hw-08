@@ -3,28 +3,48 @@
   padding-bottom: 94px;
 }
 .company__title {
-  @include font(null, 36px, 1.16, 00.03em);
+  @include font(null, 28px, 1.17, 0.03em);
+  text-align: center;
   color: var(--main-h-color);
+  @media screen and (min-width: 1200px) {
+    @include font(null, 36px, 1.16, 0.03em);
+  }
 }
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .company__clients {
   margin-top: 50px;
 }
 
 .clients__icons {
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 30px;
   width: 170px;
   height: 92px;
   border: 1px solid var(--main-icons-color);
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 60px) / 2);
   }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
