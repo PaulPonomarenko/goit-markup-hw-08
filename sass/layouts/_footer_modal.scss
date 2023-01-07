@@ -1,20 +1,27 @@
-.footer-form {
-  min-width: 570px;
-  margin-left: 93px;
-}
-
 .footer-form__label {
+  display: block;
+  text-align: center;
   @include font(700, 14px, 1.14, 0.03em);
-  display: flex;
-
-  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  // text-align: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  // width: 100%;
   margin-bottom: 20px;
   color: var(--main-white-color);
 }
 
 .footer-form__input {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   @include font(400, 16px, 1.25, 0.03em);
-  width: 358px;
+  width: 100%;
+  // width: 358px;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
@@ -28,6 +35,10 @@
 }
 
 .footer-form__btn {
+  // width: 100%;
+  // text-align: center;
+  // margin-left: auto;
+  // margin-right: auto;
   @include font(700, 16px, 1.87, 0.06em);
   display: inline-flex;
   justify-content: center;
