@@ -534,8 +534,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
-  margin-bottom: -30px;
+}
+@media screen and (min-width: 480px) {
+  .clients {
+    gap: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients {
@@ -548,26 +551,31 @@ header {
 }
 
 .clients__icons {
-  width: 100%;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--main-icons-color);
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
 }
+@media screen and (max-width: 479px) {
+  .clients__icons {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .clients__icons:not(:last-child) {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 480px) {
   .clients__icons {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .clients__icons {
-    width: calc((100% - 90px) / 3);
-  }
-  .clients__icons:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100% - 60px) / 3);
   }
 }
 .clients__icons:hover, .clients__icons:focus {
