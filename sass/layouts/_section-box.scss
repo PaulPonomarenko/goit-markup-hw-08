@@ -1,5 +1,8 @@
-.section-box {
-  padding-bottom: 94px;
+.box {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .example {

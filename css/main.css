@@ -261,8 +261,13 @@ header {
   background-color: var(--hero-bg-color);
 }
 
-.section-box {
-  padding-bottom: 94px;
+.box {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .box {
+    display: block;
+  }
 }
 
 .example {
