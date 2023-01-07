@@ -131,6 +131,15 @@ header {
   border: 1px solid #ececec;
   background-color: var(--main-white-color);
 }
+header .container {
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  header .container {
+    height: 60px;
+  }
+}
+
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -162,6 +171,11 @@ header {
 .navigation__list > li:not(:last-child) {
   margin-right: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .navigation__list {
+    display: none;
+  }
+}
 
 .contacts {
   display: flex;
@@ -170,6 +184,11 @@ header {
 }
 .contacts > li:not(:last-child) {
   margin-right: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .navigation__link {
@@ -214,6 +233,17 @@ header {
 .contacts__icons {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.header_menu {
+  height: 40px;
+  padding: 0;
+  border: none;
+}
+@media screen and (min-width: 1200px) {
+  .header_menu {
+    display: none;
+  }
 }
 
 .hero {
