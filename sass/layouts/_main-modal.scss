@@ -69,7 +69,7 @@
 }
 .modal__title {
   @include font(700, 20px, 1.15, 0.03em);
-  margin-top: 40px;
+
   margin-bottom: 12px;
   text-align: center;
   color: var(--second-link-color);
