@@ -277,11 +277,16 @@ header .container {
   right: 0px;
   background-color: var(--main-white-color);
 }
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
 
 .mobile-close {
   display: block;
   margin-top: 10px;
-  margin-right: 0;
+  margin-right: 15px;
   margin-left: auto;
   height: 40px;
   padding: 0;
