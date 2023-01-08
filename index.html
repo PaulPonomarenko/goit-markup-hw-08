@@ -180,19 +180,34 @@
           <h2 class="box__title">Чим ми займаємося</h2>
           <ul class="example box__example list">
             <li class="example__items">
-              <img src="./images/box_1.jpg" alt="написання коду" width="370" />
+              <img
+                srcset="./images/box1.jpg 1x, ./images/box1_2x.jpg 2x"
+                src="./images/box1.jpg"
+                alt="написання коду"
+                width="370"
+              />
               <div class="example__label">
                 <p class="example__post-title">ДЕСКТОПНІ ДОДАТКИ</p>
               </div>
             </li>
             <li class="example__items">
-              <img src="./images/box_2.jpg" alt="синхронизування телефона і ноутбука" width="370" />
+              <img
+                srcset="./images/box2.jpg 1x, ./images/box2_2x.jpg 2x"
+                src="./images/box2.jpg"
+                alt="синхронизування телефона і ноутбука"
+                width="370"
+              />
               <div class="example__label">
                 <p class="example__post-title">МОБІЛЬНІ ДОДАТКИ</p>
               </div>
             </li>
             <li class="example__items">
-              <img src="./images/box_3.jpg" alt="малювання на планшеті" width="370" />
+              <img
+                srcset="./images/box3.jpg 1x, ./images/box3_2x.jpg 2x"
+                src="./images/box3.jpg"
+                alt="малювання на планшеті"
+                width="370"
+              />
               <div class="example__label">
                 <p class="example__post-title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
               </div>
@@ -205,7 +220,24 @@
           <h2 class="section-team__title">Наша команда</h2>
           <ul class="staff section-team__staff list">
             <li class="staff__items">
-              <img src="./images/igor.jpg" alt="спеціаліст з product designer" width="270" />
+              <picture>
+                <source
+                  srcset="./images/igor1x-desk 1x, ./images/igor2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                  sizes="270px 260px"
+                />
+                <source
+                  srcset="./images/igor1x-tabl 1x, ./images/igor2x-tabl.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="354px 374px"
+                />
+                <source
+                  srcset="./images/igor1x-mob 1x, ./images/igor2x-mob.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="450px 460px"
+                />
+                <img src="./images/igor.jpg" alt="спеціаліст з product designer" width="270" />
+              </picture>
               <div class="our-team">
                 <h3 class="our-team__name">Ігор Дем'яненко</h3>
                 <p class="our-team__text">Product Designer</p>
@@ -242,7 +274,24 @@
               </div>
             </li>
             <li class="staff__items">
-              <img src="./images/olga.jpg" alt="спеціаліст з frontend developer" width="270" />
+              <picture>
+                <source
+                  srcset="./images/olga1x-desk, ./images/olga2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                  sizes="270px 260px"
+                />
+                <source
+                  srcset="./images/olga1x-tabl, ./images/olga2x-tabl.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="354px 374px"
+                />
+                <source
+                  srcset="./images/olga1x-mobl, ./images/olga2x-mobl.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="450px 460px"
+                />
+                <img src="./images/olga.jpg" alt="спеціаліст з frontend developer" width="270" />
+              </picture>
               <div class="our-team">
                 <h3 class="our-team__name">Ольга Рєпіна</h3>
                 <p class="our-team__text">Frontend Developer</p>
@@ -279,7 +328,24 @@
               </div>
             </li>
             <li class="staff__items">
-              <img src="./images/nikolay.jpg" alt="спеціаліст з marketing" width="270" />
+              <picture>
+                <source
+                  srcset="./images/nikolay1x-desk 1x, ./images/nikolay2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                  sizes="270px 260px"
+                />
+                <source
+                  srcset="./images/nikolay1x-tabl 1x, ./images/nikolay2x-tabl.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="354px 374px"
+                />
+                <source
+                  srcset="./images/nikolay1x-mob 1x, ./images/nikolay2x-mob.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="450px 460px"
+                />
+                <img src="./images/nikolay.jpg" alt="спеціаліст з marketing" width="270" />
+              </picture>
               <div class="our-team">
                 <h3 class="our-team__name">Микола Тарасов</h3>
                 <p class="our-team__text">Marketing</p>
@@ -316,7 +382,24 @@
               </div>
             </li>
             <li class="staff__items">
-              <img src="./images/mikle.jpg" alt="спеціаліст з ui designer" width="270" />
+              <picture>
+                <source
+                  srcset="./images/mikle1x-desk 1x, ./images/mikle2x-desk.jpg 2x"
+                  media="(min-width: 1200px)"
+                  sizes="270px 260px"
+                />
+                <source
+                  srcset="./images/mikle1x-tabl 1x, ./images/mikle2x-tabl.jpg 2x"
+                  media="(min-width: 768px)"
+                  sizes="354px 374px"
+                />
+                <source
+                  srcset="./images/mikle1x-mobl 1x, ./images/mikle2x-mobl.jpg 2x"
+                  media="(min-width: 480px)"
+                  sizes="450px 460px"
+                />
+                <img src="./images/mikle.jpg" alt="спеціаліст з ui designer" width="270" />
+              </picture>
               <div class="our-team">
                 <h3 class="our-team__name">Михайло Єрмаков</h3>
                 <p class="our-team__text">UI Designer</p>
