@@ -134,6 +134,7 @@ header {
 
 .mobile-js.is-hidden {
   transform: translateX(0) scale(0);
+  opacity: 1;
 }
 .menu-content {
   display: flex;
