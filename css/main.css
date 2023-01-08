@@ -128,6 +128,7 @@ ul {
 }
 
 header {
+  position: relative;
   border: 1px solid #ececec;
   background-color: var(--main-white-color);
 }
@@ -264,6 +265,113 @@ header .container {
 
 .header_menu-icons {
   background-color: var(--main-white-color);
+}
+
+.mobile {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: var(--main-white-color);
+}
+
+.mobile-close {
+  display: block;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-left: auto;
+  height: 40px;
+  padding: 0;
+  border: none;
+  transition: color 250ms var(--timing-function);
+}
+.mobile-close:hover {
+  fill: var(--accent-color);
+}
+
+.mibile-close__icons {
+  background-color: var(--main-white-color);
+}
+
+.mobile-nav {
+  margin-bottom: 302px;
+  padding-left: 40px;
+}
+
+.mobail-nav__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobail-nav__links {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  transition: color 250ms var(--timing-function);
+  color: var(--second-link-color);
+}
+.mobail-nav__links:hover {
+  color: var(--accent-color);
+}
+
+.mobail-cont {
+  padding-left: 40px;
+}
+.mobail-cont > li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobail-cont__link.tel {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.51;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mobail-cont__link.tel {
+    font-size: 34px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+  }
+}
+
+.mobail-cont__link.email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--main-link-color);
+}
+
+.mob-soc-container {
+  padding-left: 40px;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.mobail-soc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobail-soc__items {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobail-soc__items:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobail-soc__links {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
+  color: var(--accent-color);
 }
 
 .hero {
