@@ -116,37 +116,47 @@ header {
   background-color: var(--main-white-color);
 }
 
-.mobile {
+.mobile-js {
   position: fixed;
   overflow-y: scroll;
+  z-index: 1000;
   width: 100vw;
   height: 100vh;
   top: 0px;
   left: 0px;
-  right: 0px;
+
+  transition: transform 250ms var(--timing-function), visibility 250ms var(--timing-function);
   background-color: var(--main-white-color);
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
+.mobile-js.is-hidden {
+  transform: translateX(0) scale(0);
+}
+.menu-content {
+  display: flex;
+  padding: 48px 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
 .mobile-close {
   display: block;
-  margin-top: 10px;
-  margin-right: 15px;
   margin-left: auto;
   height: 40px;
   padding: 0;
   border: none;
-  transition: color 250ms var(--timing-function);
-  &:hover {
-    fill: var(--accent-color);
-  }
 }
 .mibile-close__icons {
   background-color: var(--main-white-color);
+  &:hover {
+    fill: var(--accent-color);
+  }
+  transition: color 250ms var(--timing-function);
 }
 .mobile-nav {
-  margin-bottom: 302px;
   padding-left: 40px;
 }
 .mobail-nav__items:not(:last-child) {
@@ -181,7 +191,6 @@ header {
 .mob-soc-container {
   padding-left: 40px;
   margin-top: 64px;
-  margin-bottom: 48px;
 }
 .mobail-soc {
   display: flex;
@@ -197,4 +206,10 @@ header {
   @include font(500, 18px, 1.22, 0.02em);
   padding-right: 10px;
   color: var(--accent-color);
+}
+.cont-mob {
+  height: 100vh;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0 15px;
 }
